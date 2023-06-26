@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+<H1>Sign Up</H1>
+        <form action="" onsubmit="return validatesubmit()">
+            <label for="firstname">First Name:</label><br>
+            <input type="text" placeholder="Enter your First Name" id="firstname" onkeyup="validatefirstname()"><span id="errfirst">*First name must contain at least 3 characters</span><br><br>
+
+            <label for="lastname">Last Name:</label><br>
+            <input type="text" placeholder="Enter your Last Name" id="lastname" onkeyup="validatelastname()"><span id="errlast">*Last name must contain at least 3 characters</span><br><br>
+     
+             <div>
+            <label for="password">Password:</label><span id="s"></span><br>
+            <input type="password" placeholder="Enter your Password" id="password" onkeyup="checkpassword(), confirmpassword()"><span id="eye" onclick="showpassword()"><i class="far fa-eye"></i></span>
+            <br><br>
+            </div>
+
+            <label for="cpassword">Confirm Password:</label><br>
+            <input type="password" placeholder="Enter your Password" id="cpassword" onkeyup="confirmpassword()"><span id="errpass">*Password does not match</span><br><br>
+
+            <label for="mobile">Mobile Number:</label><br>
+            <input type="text" placeholder="Enter your mobile number" id="mobile" maxlength="10" onkeyup="mnumber()"><span id="errmob">*Invalid mobile number</span><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" placeholder="Enter your Email" id="email" onkeyup="validateemail()"><span id="errmail">*Invalid Email</span><br><br>
+
+            <input type="submit" id="submit" value="SUBMIT"> 
+            <!-- onclick="validatesubmit()"> -->
+        </form>
+
+    </div>
+
+    <div id="error1">
+   
+    <li class="error" id="errfirstname"></li>
+    <li class="error" id="errlastname"></li>
+    <li class="error" id="errpassword"></li>
+    <li class="error" id="errmobile"></li>
+    <li class="error" id="erremail"></li>
+    
+    </div>
+
+<script type="text/javascript" src="jscript.js"></script>
+
+</body>
+
+</html>

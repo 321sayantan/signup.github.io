@@ -1,0 +1,146 @@
+body
+{
+display:flex;
+background: url('https://img.freepik.com/premium-photo/desktop-source-code-wallpaper-by-computer-language-with-coding-programming_33771-595.jpg?w=2000') no-repeat center center/cover ;
+/* background: url('https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_1280.jpg') no-repeat center center/cover ; */
+
+}
+
+.container{
+    position:relative;
+    background: transparent;
+    border: 2px solid white;
+    width: 25%;
+    margin-left: 36%;
+    margin-top: 2%;
+    padding:25px;
+    border-radius:25px;
+    backdrop-filter: blur(20px);
+}
+
+.container H1{
+text-align:center;
+margin-bottom:20px;
+margin-top:3px;
+color:white;
+}
+
+input{
+width:  96%; 
+text-align:center;
+padding:10px 5px;
+border-radius:8px;
+border: 3px solid black;
+transition: ease-out;
+}
+
+#submit{
+width: 70%;
+border-radius:20px;
+margin-left: 15%;
+cursor: pointer;
+}
+
+#submit:hover{
+background-color:gray;
+transform: scale(1.2);
+}
+
+label{
+color:aqua;
+}
+
+span{
+    display: none;
+}
+
+#s{
+    display: inline;
+    color: aqua;
+}
+
+#eye{
+display: inline;
+margin-left: -33px;
+cursor: pointer;
+}
+
+
+#error1{
+    display: flex;
+    flex-direction: column;
+    margin-left: 3%;
+    margin-top: 9%;
+    margin-right: 2px;
+    height: fit-content;
+    width: 30%;
+    /* border: 2px solid yellow; */
+}
+
+.error{
+    border: 2px solid red;
+    margin: 15px;
+    padding: 8px;
+    color: white;
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    visibility: hidden;
+}
+
+#errlastname{
+    margin-top: 25px;
+}
+
+#errpassword{
+    margin-top: 70px;
+}
+
+#errmobile{
+    margin-top: 72px;
+}
+
+#erremail{
+    margin-top: 25px;
+}
+
+@media (max-width: 800px){
+#error1{
+    display: none;
+}
+
+.container{
+    width: 70%;
+    margin: auto;
+    margin-top: 10%;
+}
+
+span{
+    display: none;
+    visibility: hidden;
+    color: red;
+    padding-top: 2px;
+    margin-left: 5px;
+}
+
+#s{
+    display: inline;
+    visibility: visible;
+}
+
+#eye{
+    color: black;
+    visibility: visible;
+}
+
+#submit:ontouchstart{
+background-color: red;
+}
+
+}
+
+@media (min-width: 800px) and (max-width: 1000px)
+{
+    #error1{
+        margin-top: 100px;
+    }
+}
