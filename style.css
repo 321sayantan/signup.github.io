@@ -1,5 +1,6 @@
 body
 {
+overflow:hidden;
 display:flex;
 background: url('https://img.freepik.com/premium-photo/desktop-source-code-wallpaper-by-computer-language-with-coding-programming_33771-595.jpg?w=2000') no-repeat center center/cover ;
 /* background: url('https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_1280.jpg') no-repeat center center/cover ; */
@@ -12,7 +13,6 @@ background: url('https://img.freepik.com/premium-photo/desktop-source-code-wallp
     border: 2px solid white;
     width: 25%;
     margin-left: 36%;
-    margin-top: 2%;
     padding:25px;
     border-radius:25px;
     backdrop-filter: blur(20px);
@@ -70,7 +70,7 @@ cursor: pointer;
     display: flex;
     flex-direction: column;
     margin-left: 3%;
-    margin-top: 9%;
+    margin-top: 7%;
     margin-right: 2px;
     height: fit-content;
     width: 30%;
